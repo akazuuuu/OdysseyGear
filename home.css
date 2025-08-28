@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #FAFAF7;
+  
+}
+#navbar {
+  width: 100%;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+
+#navbar .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+  margin: 0 auto; 
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-family: "Rubik", sans-serif;
+  padding-right: 1rem;
+  font-weight: bold;
+}
+
+#HeroBG1{
+    width: 100%;
+    height: auto;
+    position: relative;
+    box-shadow: -1px 24px 32px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 24px 32px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 24px 32px 0px rgba(0,0,0,0.75);
+}
+
+.logo{
+    font-family: "Anton",sans-serif;
+    font-size: 1.5rem;
+}
+
+#superTitle {
+  position: absolute;         
+  top: 78%;                    
+  left: 50%;                   
+  transform: translate(-50%, -50%);
+  font-family: "Anton", sans-serif;
+  font-size: 8rem;            
+  color: white;                
+
+}
+
+
+
+
