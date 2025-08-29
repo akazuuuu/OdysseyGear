@@ -9,6 +9,11 @@ body {
   margin: 0;
   font-family: sans-serif;
   background-color: #FAFAF7;
+    margin: 0;
+  min-height: 100vh;
+  background-color: #FFFFFF; /* white base */
+  background-image: radial-gradient(#1D4ED8 1px, transparent 1px);
+  background-size: 30px 30px; /* spacing between dots */
   
 }
 #navbar {
@@ -54,6 +59,24 @@ body {
   font-weight: bold;
 }
 
+.join a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px; /* pill shape */
+  background: linear-gradient(to right, #1D4ED8, #3B82F6); /* modern blue gradient */
+  color: #FFFFFF;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.join a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
 #HeroBG1{
     width: 100%;
     height: auto;
@@ -66,19 +89,159 @@ body {
 .logo{
     font-family: "Anton",sans-serif;
     font-size: 1.5rem;
+      background: linear-gradient(to right, #1E3A8A, #3B82F6); /* blue gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 #superTitle {
   position: absolute;         
-  top: 78%;                    
+  top: 88%;                    
   left: 50%;                   
   transform: translate(-50%, -50%);
   font-family: "Anton", sans-serif;
   font-size: 8rem;            
   color: white;                
-
 }
 
 
 
+#btn1 {
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #1D4ED8, #3B82F6);
+  color: #fff;
+  border: none;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
+#btn1:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+#Limitless{
+  
+}
+.HeroContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 8%;
+  flex-wrap: wrap; /* makes it responsive */
+}
+
+.HeroText1 {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers children horizontally */
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.HeroText1 h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #1E3A8A, #3B82F6); /* blue gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: "Anton",sans-serif;
+  line-height: 1.2;
+}
+
+.HeroText1 p {
+  font-size: 1.5rem;
+  margin: 0 auto 1.5rem auto; 
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.HeroContainer2{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  gap: 40px;
+}
+
+#HeroP2 {
+  max-width: 500px;
+  font-size: 2rem;
+  line-height: 1.6;
+  color: #374151;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.Why{
+    display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically */
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.5rem;;
+   background: linear-gradient(to right, #7389c7, #0e3169); /* blue gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: "Anton", sans-serif;
+  
+}
+.features_list {
+  padding: 4rem 2rem;
+
+}
+
+.feature-section {
+  display: flex;
+  flex-wrap: wrap;       /* allows items to wrap */
+  justify-content: center;
+  gap: 2rem;             /* space between feature boxes */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-box {
+
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1E3A8A; /* dark blue */
+  margin-bottom: 1rem;
+}
+
+.feature-box p {
+  font-size: 1rem;
+  color: #4b5563; /* gray-700 */
+  line-height: 1.6;
+}
+
+.feature-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+}
