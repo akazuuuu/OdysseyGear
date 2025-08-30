@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; /* disables horizontal scroll */
+}
 
 body {
   margin: 0;
@@ -244,4 +248,139 @@ body {
 
 p {
   font-family: "Rubik", sans-serif;
+}
+
+/* Hamburger menu (hidden on desktop) */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: black;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  #navbar .container {
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .join {
+    display: none; /* optional: hide join button on very small screens */
+  }
+}
+
+@media (max-width: 600px) {
+  /* Navbar (already done above) */
+
+  /* Hero sections */
+  .HeroContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .HeroContainer2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  #HeroP2 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+
+  .HeroText1 h1 {
+    font-size: 2.5rem;
+  }
+
+  .HeroText1 p {
+    font-size: 1rem;
+  }
+
+  #btn1 {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+
+  /* Features section */
+  .feature-section {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .feature-box {
+    width: 100%;
+    max-width: 90%;
+  }
+
+#heroVideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#heroVideo video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills container, may crop */
+}
+
+#HeroP2 {
+  margin-top: 20px;  /* small space, not 150px */
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #374151;
+  text-align: center;
+} 
+
+@media (max-width: 768px) {
+  .HeroContainer2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  #heroVideo {
+    width: 100%;
+    height: auto;
+  }
+
+  #HeroP2 {
+    margin-top: 20px;   /* small gap under video */
+    font-size: 1.2rem;  /* scale down for phones */
+    text-align: center;
+  }
+
+  .Why {
+    justify-content: center;
+    text-align: center;
+  }
+}
 }
